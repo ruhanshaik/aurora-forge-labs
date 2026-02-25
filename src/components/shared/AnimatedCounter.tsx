@@ -34,7 +34,7 @@ const AnimatedCounter = ({ end, suffix = '', duration = 2000 }: AnimatedCounterP
   }, [end, duration]);
 
   return (
-    <span ref={ref} className="font-syne font-extrabold gradient-text">
+    <span ref={ref} className="font-comfortaa font-extrabold gradient-text">
       {count}{suffix}
     </span>
   );

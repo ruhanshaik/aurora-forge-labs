@@ -15,7 +15,7 @@ const AboutPreview = () => {
           >
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border flex items-center justify-center">
               <div className="text-center p-8">
-                <span className="font-syne font-extrabold text-6xl gradient-text">S</span>
+                <span className="font-comfortaa font-extrabold text-6xl gradient-text">S</span>
                 <p className="text-sm text-muted-foreground mt-2">S Mohammed Ruhan</p>
                 <p className="text-xs text-muted-foreground">Founder, GMI Tech</p>
               </div>
@@ -29,7 +29,7 @@ const AboutPreview = () => {
             transition={{ duration: 0.65, delay: 0.1 }}
           >
             <SectionLabel label="About Us" />
-            <h2 className="font-syne font-bold text-3xl md:text-4xl mb-6">
+            <h2 className="font-comfortaa font-bold text-3xl md:text-4xl mb-6">
               Crafting Digital <span className="gradient-text">Excellence</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">

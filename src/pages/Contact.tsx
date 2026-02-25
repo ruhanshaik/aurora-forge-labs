@@ -38,7 +38,7 @@ const Contact = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <SectionLabel label="Contact" />
-          <h1 className="font-syne font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
+          <h1 className="font-comfortaa font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
             Let's Talk About{' '}
             <span className="gradient-text">Your Project</span>
           </h1>
@@ -54,7 +54,7 @@ const Contact = () => {
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Left - Info */}
             <div className="lg:col-span-2 space-y-6">
-              <h3 className="font-syne font-bold text-xl mb-6">Get in Touch</h3>
+              <h3 className="font-comfortaa font-bold text-xl mb-6">Get in Touch</h3>
 
               <a href="mailto:gmitech@zohomail.in" className="flex items-center gap-4 p-4 glass-card hover:shadow-md">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
@@ -91,20 +91,20 @@ const Contact = () => {
                 href="https://wa.me/919036717885"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 glass-card hover:shadow-md bg-green-50 border-green-200"
+                className="flex items-center gap-4 p-4 glass-card hover:shadow-md"
               >
-                <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center text-green-600">
+                <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center text-green-500">
                   <MessageCircle size={18} />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-green-700">Chat on WhatsApp</p>
-                  <p className="text-xs text-green-600">Quick response guaranteed</p>
+                  <p className="text-sm font-medium text-green-400">Chat on WhatsApp</p>
+                  <p className="text-xs text-green-500/70">Quick response guaranteed</p>
                 </div>
               </a>
 
               {/* FAQ */}
               <div className="pt-6">
-                <h3 className="font-syne font-bold text-lg mb-4">Quick Answers</h3>
+                <h3 className="font-comfortaa font-bold text-lg mb-4">Quick Answers</h3>
                 <Accordion type="single" collapsible className="space-y-2">
                   {faqs.slice(0, 4).map((faq, i) => (
                     <AccordionItem
@@ -137,7 +137,7 @@ const Contact = () => {
                     <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
                       <CheckCircle2 size={32} className="text-green-600" />
                     </div>
-                    <h3 className="font-syne font-bold text-2xl mb-2">Message Sent!</h3>
+                    <h3 className="font-comfortaa font-bold text-2xl mb-2">Message Sent!</h3>
                     <p className="text-muted-foreground mb-2">
                       We'll get back to you within 24 hours.
                     </p>
@@ -145,7 +145,7 @@ const Contact = () => {
                   </motion.div>
                 ) : (
                   <>
-                    <h3 className="font-syne font-bold text-xl mb-6">Send Us a Message</h3>
+                    <h3 className="font-comfortaa font-bold text-xl mb-6">Send Us a Message</h3>
                     <form onSubmit={handleSubmit} className="space-y-5">
                       <div className="grid sm:grid-cols-2 gap-5">
                         <div>

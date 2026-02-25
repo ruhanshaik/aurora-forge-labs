@@ -20,7 +20,7 @@ const FAQ = () => {
           transition={{ duration: 0.65 }}
         >
           <SectionLabel label="FAQ" />
-          <h2 className="font-syne font-bold text-3xl md:text-4xl mb-4">
+          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl mb-4">
             Frequently Asked <span className="gradient-text">Questions</span>
           </h2>
         </motion.div>

@@ -32,7 +32,7 @@ const Features = () => {
           transition={{ duration: 0.65 }}
         >
           <SectionLabel label="Features" />
-          <h2 className="font-syne font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
+          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
             Why We Stand <span className="gradient-text">Out</span>
           </h2>
         </motion.div>
@@ -50,7 +50,7 @@ const Features = () => {
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-4">
                   {iconMap[f.icon]}
                 </div>
-                <h3 className="font-syne font-bold text-base mb-2">{f.title}</h3>
+                <h3 className="font-comfortaa font-bold text-base mb-2">{f.title}</h3>
                 <p className="text-sm text-muted-foreground">{f.description}</p>
               </GlassCard>
             </motion.div>

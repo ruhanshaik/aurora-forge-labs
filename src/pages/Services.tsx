@@ -27,7 +27,7 @@ const Services = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <SectionLabel label="Services" />
-          <h1 className="font-syne font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
+          <h1 className="font-comfortaa font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
             Comprehensive Digital{' '}
             <span className="gradient-text">Solutions</span>
           </h1>
@@ -64,7 +64,7 @@ const Services = () => {
               >
                 <div className={i % 2 === 1 ? 'md:order-2' : ''}>
                   <div className="mb-4">{iconMap[service.icon]}</div>
-                  <h2 className="font-syne font-bold text-2xl md:text-3xl mb-4">{service.title}</h2>
+                  <h2 className="font-comfortaa font-bold text-2xl md:text-3xl mb-4">{service.title}</h2>
                   <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
                   <ul className="space-y-3 mb-8">
                     {service.features.map((f, j) => (
@@ -96,7 +96,7 @@ const Services = () => {
       <section className="py-20 section-dark text-center relative overflow-hidden">
         <div className="glow-orb w-64 h-64 bg-primary top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <h2 className="font-syne font-bold text-3xl md:text-4xl text-white mb-6">
+          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl text-foreground mb-6">
             Ready to Get <span className="gradient-text">Started?</span>
           </h2>
           <p className="text-gray-400 max-w-lg mx-auto mb-8">
