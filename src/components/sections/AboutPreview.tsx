@@ -32,10 +32,10 @@ const AboutPreview = () => {
             <h2 className="font-comfortaa font-bold text-3xl md:text-4xl mb-6">
               Crafting Digital <span className="gradient-text">Excellence</span>
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Founded by S Mohammed Ruhan, GMI Tech is a digital solutions company based in
-              Bangalore and Ballari. We empower startups and small businesses with modern,
-              secure, and scalable digital infrastructure.
+            <p className="text-muted-foreground leading-relaxed mb-4">Founded by Shaik Mohammed GMI Tech is a digital solutions company based in Bangalore and Ballari. We empower startups and small businesses with modern, secure, and scalable digital infrastructure.
+
+
+
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Our mission is to deliver high-quality design, development, and security solutions
