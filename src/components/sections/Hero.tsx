@@ -16,7 +16,7 @@ const Hero = () => {
             radial-gradient(ellipse 80% 50% at 20% 40%, hsla(217, 91%, 60%, 0.08) 0%, transparent 60%),
             radial-gradient(ellipse 60% 40% at 80% 60%, hsla(199, 89%, 48%, 0.06) 0%, transparent 60%),
             radial-gradient(ellipse 100% 80% at 50% 100%, hsla(217, 91%, 60%, 0.04) 0%, transparent 60%),
-            hsl(0 0% 100%)
+            hsl(0 0% 4%)
           `,
         }}
       />
@@ -36,7 +36,7 @@ const Hero = () => {
             <span className="text-xs font-medium text-muted-foreground">Design · Dev · Security — Bangalore & Ballari</span>
           </div>
 
-          <h1 className="font-syne font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 max-w-4xl mx-auto">
+          <h1 className="font-comfortaa font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 max-w-4xl mx-auto">
             Building Digital Solutions{' '}
             <span className="gradient-text">for Your Growth</span>
           </h1>

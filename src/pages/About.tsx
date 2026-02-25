@@ -29,7 +29,7 @@ const About = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <SectionLabel label="About GMI Tech" />
-          <h1 className="font-syne font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
+          <h1 className="font-comfortaa font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
             Building Innovative{' '}
             <span className="gradient-text">Digital Solutions</span>
           </h1>
@@ -51,7 +51,7 @@ const About = () => {
             >
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border flex items-center justify-center">
                 <div className="text-center">
-                  <span className="font-syne font-extrabold text-8xl gradient-text">SMR</span>
+                  <span className="font-comfortaa font-extrabold text-8xl gradient-text">SMR</span>
                   <p className="text-muted-foreground mt-4 font-medium">S Mohammed Ruhan</p>
                   <p className="text-sm text-muted-foreground">Founder & CEO</p>
                 </div>
@@ -64,7 +64,7 @@ const About = () => {
               transition={{ duration: 0.65 }}
             >
               <SectionLabel label="The Founder" />
-              <h2 className="font-syne font-bold text-3xl md:text-4xl mb-6">S Mohammed Ruhan</h2>
+              <h2 className="font-comfortaa font-bold text-3xl md:text-4xl mb-6">S Mohammed Ruhan</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 A passionate technologist and entrepreneur based in Bangalore and Ballari, 
                 S Mohammed Ruhan founded GMI Tech with a clear vision — to bridge the digital 
@@ -104,7 +104,7 @@ const About = () => {
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mx-auto mb-4">
                     {item.icon}
                   </div>
-                  <h3 className="font-syne font-bold text-lg mb-3">{item.title}</h3>
+                  <h3 className="font-comfortaa font-bold text-lg mb-3">{item.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
                 </GlassCard>
               </motion.div>
@@ -124,7 +124,7 @@ const About = () => {
             transition={{ duration: 0.65 }}
           >
             <SectionLabel label="Our Journey" />
-            <h2 className="font-syne font-bold text-3xl md:text-4xl">
+            <h2 className="font-comfortaa font-bold text-3xl md:text-4xl">
               The <span className="gradient-text">Timeline</span>
             </h2>
           </motion.div>
@@ -147,7 +147,7 @@ const About = () => {
                 <div className="ml-10 md:ml-0 md:w-1/2">
                   <GlassCard>
                     <span className="font-fira text-xs text-primary font-medium">{t.year}</span>
-                    <h3 className="font-syne font-bold text-base mt-1 mb-2">{t.title}</h3>
+                    <h3 className="font-comfortaa font-bold text-base mt-1 mb-2">{t.title}</h3>
                     <p className="text-sm text-muted-foreground">{t.description}</p>
                   </GlassCard>
                 </div>
@@ -182,7 +182,7 @@ const About = () => {
       {/* CTA */}
       <section className="py-20 md:py-28 text-center">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="font-syne font-bold text-3xl md:text-4xl mb-6">
+          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl mb-6">
             Ready to Work <span className="gradient-text">Together?</span>
           </h2>
           <Link

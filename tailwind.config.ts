@@ -14,9 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        syne: ['Syne', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        comfortaa: ['Comfortaa', 'cursive'],
         fira: ['Fira Code', 'monospace'],
       },
       colors: {

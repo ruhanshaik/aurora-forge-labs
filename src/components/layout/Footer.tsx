@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="inline-block mb-4">
-              <span className="font-syne font-extrabold text-2xl text-white">
+              <span className="font-comfortaa font-extrabold text-2xl text-foreground">
                 GMI <span className="gradient-text">Tech</span>
               </span>
             </Link>
@@ -23,7 +23,7 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="font-syne font-bold text-white mb-4 text-sm uppercase tracking-wider">Useful Links</h4>
+            <h4 className="font-comfortaa font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Useful Links</h4>
             <div className="flex flex-col gap-3">
               {[
                 { to: '/', label: 'Home' },
@@ -40,7 +40,7 @@ const Footer = () => {
 
           {/* Technologies */}
           <div>
-            <h4 className="font-syne font-bold text-white mb-4 text-sm uppercase tracking-wider">Technologies</h4>
+            <h4 className="font-comfortaa font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Technologies</h4>
             <div className="flex flex-col gap-3">
               {['HTML, CSS, JavaScript', 'React & Node.js', 'Android & iOS', 'Cloud & Hosting'].map((t) => (
                 <span key={t} className="text-sm text-gray-400">{t}</span>
@@ -50,7 +50,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-syne font-bold text-white mb-4 text-sm uppercase tracking-wider">Contact</h4>
+            <h4 className="font-comfortaa font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Contact</h4>
             <div className="flex flex-col gap-3">
               <a href="mailto:gmitech@zohomail.in" className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
                 <Mail size={14} /> gmitech@zohomail.in

@@ -33,7 +33,7 @@ const ServicesPreview = () => {
           transition={{ duration: 0.65 }}
         >
           <SectionLabel label="Our Services" />
-          <h2 className="font-syne font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
+          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
             What We <span className="gradient-text">Offer</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
@@ -54,7 +54,7 @@ const ServicesPreview = () => {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
                   {iconMap[service.icon]}
                 </div>
-                <h3 className="font-syne font-bold text-lg mb-2">{service.title}</h3>
+                <h3 className="font-comfortaa font-bold text-lg mb-2">{service.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
               </GlassCard>
             </motion.div>

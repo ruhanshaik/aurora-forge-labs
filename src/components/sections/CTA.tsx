@@ -14,7 +14,7 @@ const CTA = () => {
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.65 }}
         >
-          <h2 className="font-syne font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-6">
+          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
             Let's Build Your{' '}
             <span className="gradient-text">Digital Success</span>
           </h2>
