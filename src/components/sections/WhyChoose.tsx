@@ -22,7 +22,7 @@ const item = {
 
 const WhyChoose = () => {
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-24 md:py-36">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           className="text-center mb-14"
@@ -32,7 +32,7 @@ const WhyChoose = () => {
           transition={{ duration: 0.65 }}
         >
           <SectionLabel label="Why GMI" />
-          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
+          <h2 className="font-syne font-extrabold text-3xl md:text-5xl mb-4">
             Why Choose <span className="gradient-text">GMI Tech</span>
           </h2>
         </motion.div>
@@ -50,8 +50,8 @@ const WhyChoose = () => {
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-4">
                   {iconMap[w.icon]}
                 </div>
-                <h3 className="font-comfortaa font-bold text-base mb-2">{w.title}</h3>
-                <p className="text-sm text-muted-foreground">{w.description}</p>
+                <h3 className="font-syne font-bold text-base mb-2">{w.title}</h3>
+                <p className="text-sm text-muted-foreground font-outfit">{w.description}</p>
               </GlassCard>
             </motion.div>
           ))}

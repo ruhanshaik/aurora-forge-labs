@@ -23,7 +23,7 @@ const item = {
 
 const ServicesPreview = () => {
   return (
-    <section className="py-20 md:py-28 bg-gmi-surface">
+    <section className="py-24 md:py-36 bg-gmi-surface">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           className="text-center mb-14"
@@ -33,10 +33,10 @@ const ServicesPreview = () => {
           transition={{ duration: 0.65 }}
         >
           <SectionLabel label="Our Services" />
-          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
+          <h2 className="font-syne font-extrabold text-3xl md:text-5xl mb-4">
             What We <span className="gradient-text">Offer</span>
           </h2>
-          <p className="text-muted-foreground max-w-xl mx-auto">
+          <p className="text-muted-foreground max-w-xl mx-auto font-outfit font-light">
             Comprehensive digital solutions tailored for startups and growing businesses.
           </p>
         </motion.div>
@@ -54,8 +54,8 @@ const ServicesPreview = () => {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
                   {iconMap[service.icon]}
                 </div>
-                <h3 className="font-comfortaa font-bold text-lg mb-2">{service.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
+                <h3 className="font-syne font-bold text-lg mb-2">{service.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed font-outfit">{service.description}</p>
               </GlassCard>
             </motion.div>
           ))}

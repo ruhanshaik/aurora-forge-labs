@@ -13,10 +13,10 @@ const Hero = () => {
         className="absolute inset-0 z-0"
         style={{
           background: `
-            radial-gradient(ellipse 80% 50% at 20% 40%, hsla(217, 91%, 60%, 0.08) 0%, transparent 60%),
-            radial-gradient(ellipse 60% 40% at 80% 60%, hsla(199, 89%, 48%, 0.06) 0%, transparent 60%),
-            radial-gradient(ellipse 100% 80% at 50% 100%, hsla(217, 91%, 60%, 0.04) 0%, transparent 60%),
-            hsl(0 0% 4%)
+            radial-gradient(ellipse 80% 50% at 20% 40%, hsla(258, 60%, 67%, 0.1) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 40% at 80% 60%, hsla(199, 89%, 48%, 0.07) 0%, transparent 60%),
+            radial-gradient(ellipse 100% 80% at 50% 100%, hsla(217, 91%, 60%, 0.05) 0%, transparent 60%),
+            hsl(0 0% 2%)
           `,
         }}
       />
@@ -33,31 +33,32 @@ const Hero = () => {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background/60 backdrop-blur-sm mb-8">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-xs font-medium text-muted-foreground">Design · Dev · Security — Bangalore & Ballari</span>
+            <span className="text-xs font-medium text-muted-foreground font-fira">Design · Dev · Security — Bangalore & Ballari</span>
           </div>
 
-          <h1 className="font-comfortaa font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 max-w-4xl mx-auto">
-            Building Digital Solutions{' '}
-            <span className="gradient-text">for Your Growth</span>
+          <h1 className="font-syne font-extrabold leading-[0.95] mb-8 max-w-5xl mx-auto"
+              style={{ fontSize: 'clamp(40px, 7vw, 80px)', letterSpacing: '-2px' }}>
+            We Don't Just Build Software.{' '}
+            <br />
+            <span className="gradient-text">We Engineer Digital Experiences.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-            We turn ideas into powerful digital products through clean design,
-            strong development, and reliable security.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed font-outfit font-light">
+            Precision-coded. Performance-optimized. Designed to scale.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 font-outfit"
             >
-              Get Started <ArrowRight size={18} />
+              Start Your Project <ArrowRight size={18} />
             </Link>
             <a
               href="https://wa.me/919036717885"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border text-foreground font-semibold hover:bg-secondary transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border text-foreground font-semibold hover:bg-secondary transition-all font-outfit"
             >
               Let's Talk
             </a>
@@ -73,8 +74,8 @@ const Hero = () => {
             transition={{ delay: 0.8, duration: 0.6 }}
             style={{ transform: 'rotate(-6deg)' }}
           >
-            <div className="text-xs font-medium text-green-600 mb-1">✅ Project Delivered</div>
-            <div className="text-xs text-muted-foreground">E-Commerce App</div>
+            <div className="text-xs font-medium text-green-500 mb-1 font-fira">✅ Project Delivered</div>
+            <div className="text-xs text-muted-foreground">School Management CRM</div>
             <div className="text-xs text-muted-foreground mt-1">Score: <span className="text-primary font-semibold">98/100</span></div>
           </motion.div>
 
@@ -85,9 +86,9 @@ const Hero = () => {
             transition={{ delay: 1, duration: 0.6 }}
             style={{ transform: 'rotate(6deg)' }}
           >
-            <div className="text-xs font-medium text-primary mb-1">🔒 Security Audit</div>
-            <div className="text-xs text-muted-foreground">FinTech Dashboard</div>
-            <div className="text-xs text-muted-foreground mt-1">Status: <span className="text-green-600 font-semibold">All Clear ✓</span></div>
+            <div className="text-xs font-medium text-primary mb-1 font-fira">🔒 Security Audit</div>
+            <div className="text-xs text-muted-foreground">Store Management App</div>
+            <div className="text-xs text-muted-foreground mt-1">Status: <span className="text-green-500 font-semibold">All Clear ✓</span></div>
           </motion.div>
         </div>
 
@@ -98,7 +99,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          <span className="text-xs">Scroll to explore</span>
+          <span className="text-xs font-fira">Scroll to explore</span>
           <ChevronDown size={18} className="animate-bounce" />
         </motion.div>
       </div>

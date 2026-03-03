@@ -9,29 +9,30 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="inline-block mb-4">
-              <span className="font-comfortaa font-extrabold text-2xl text-foreground">
-                GMI <span className="gradient-text">Tech</span>
+              <span className="font-syne font-extrabold text-2xl text-foreground">
+                <span className="gradient-text">GMI</span> Tech
               </span>
             </Link>
-            <p className="text-sm text-gray-400 leading-relaxed mb-4">
+            <p className="text-sm text-muted-foreground leading-relaxed mb-4 font-outfit">
               Design | Dev | Security
             </p>
-            <p className="text-sm text-gray-400 leading-relaxed">
-              Empowering startups and small businesses with modern digital solutions.
+            <p className="text-sm text-muted-foreground leading-relaxed font-outfit">
+              Software Engineered With Precision. Designed To Perform. Built To Scale.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-comfortaa font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Useful Links</h4>
+            <h4 className="font-syne font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Useful Links</h4>
             <div className="flex flex-col gap-3">
               {[
                 { to: '/', label: 'Home' },
                 { to: '/about', label: 'About Us' },
                 { to: '/services', label: 'Services' },
+                { to: '/portfolio', label: 'Portfolio' },
                 { to: '/contact', label: 'Contact' },
               ].map((link) => (
-                <Link key={link.to} to={link.to} className="text-sm text-gray-400 hover:text-white transition-colors">
+                <Link key={link.to} to={link.to} className="text-sm text-muted-foreground hover:text-foreground transition-colors font-outfit">
                   {link.label}
                 </Link>
               ))}
@@ -40,25 +41,25 @@ const Footer = () => {
 
           {/* Technologies */}
           <div>
-            <h4 className="font-comfortaa font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Technologies</h4>
+            <h4 className="font-syne font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Technologies</h4>
             <div className="flex flex-col gap-3">
-              {['HTML, CSS, JavaScript', 'React & Node.js', 'Android & iOS', 'Cloud & Hosting'].map((t) => (
-                <span key={t} className="text-sm text-gray-400">{t}</span>
+              {['HTML, CSS, JavaScript', 'React & Node.js', 'Android & iOS', 'Cloud & Hosting', 'AI & Automation'].map((t) => (
+                <span key={t} className="text-sm text-muted-foreground font-outfit">{t}</span>
               ))}
             </div>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-comfortaa font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Contact</h4>
+            <h4 className="font-syne font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Contact</h4>
             <div className="flex flex-col gap-3">
-              <a href="mailto:gmitech@zohomail.in" className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:gmitech@zohomail.in" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-outfit">
                 <Mail size={14} /> gmitech@zohomail.in
               </a>
-              <a href="tel:+919036717885" className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
+              <a href="tel:+919036717885" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors font-outfit">
                 <Phone size={14} /> +91 90367 17885
               </a>
-              <div className="flex items-start gap-2 text-sm text-gray-400">
+              <div className="flex items-start gap-2 text-sm text-muted-foreground font-outfit">
                 <MapPin size={14} className="mt-0.5 shrink-0" />
                 <span>PES College Road, Srinagar, Bangalore & Cowl Bazar, Ballari 583102</span>
               </div>
@@ -66,11 +67,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500">
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-muted-foreground font-outfit">
             © {new Date().getFullYear()} GMI Tech — All Rights Reserved
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-muted-foreground font-outfit">
             Designed & Developed by GMI Tech
           </p>
         </div>

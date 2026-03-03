@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 const navLinks = [
   { to: '/', label: 'Home' },
-  { to: '/about', label: 'About' },
   { to: '/services', label: 'Services' },
+  { to: '/about', label: 'About' },
+  { to: '/portfolio', label: 'Portfolio' },
   { to: '/contact', label: 'Contact' },
 ];
 
@@ -29,7 +30,7 @@ const Navbar = () => {
     <motion.nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-background/95 backdrop-blur-xl shadow-sm border-b border-border'
+          ? 'bg-background/92 backdrop-blur-xl shadow-sm border-b border-border'
           : 'bg-transparent'
       }`}
       initial={{ y: -100 }}
@@ -38,7 +39,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-comfortaa font-extrabold text-xl md:text-2xl">
+          <span className="font-syne font-extrabold text-xl md:text-2xl">
             <span className="gradient-text">GMI</span>
             <span className="text-foreground"> Tech</span>
           </span>
@@ -50,7 +51,7 @@ const Navbar = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={`text-sm font-medium transition-colors relative ${
+              className={`text-sm font-medium font-outfit transition-colors relative ${
                 location.pathname === link.to
                   ? 'text-primary'
                   : 'text-muted-foreground hover:text-foreground'
@@ -67,9 +68,9 @@ const Navbar = () => {
           ))}
           <Link
             to="/contact"
-            className="inline-flex items-center px-5 py-2.5 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground text-sm font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground text-sm font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 font-outfit"
           >
-            Get Started
+            Let's Talk <ArrowRight size={14} />
           </Link>
         </div>
 
@@ -101,7 +102,7 @@ const Navbar = () => {
                 >
                   <Link
                     to={link.to}
-                    className={`block text-lg font-medium py-2 ${
+                    className={`block text-lg font-medium font-outfit py-2 ${
                       location.pathname === link.to ? 'text-primary' : 'text-foreground'
                     }`}
                   >
@@ -111,9 +112,9 @@ const Navbar = () => {
               ))}
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold mt-2"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold mt-2 font-outfit"
               >
-                Get Started
+                Let's Talk <ArrowRight size={14} />
               </Link>
             </div>
           </motion.div>

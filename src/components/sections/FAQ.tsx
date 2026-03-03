@@ -10,7 +10,7 @@ import {
 
 const FAQ = () => {
   return (
-    <section className="py-20 md:py-28 bg-gmi-surface">
+    <section className="py-24 md:py-36 bg-gmi-surface">
       <div className="container mx-auto px-4 md:px-6 max-w-3xl">
         <motion.div
           className="text-center mb-14"
@@ -20,8 +20,8 @@ const FAQ = () => {
           transition={{ duration: 0.65 }}
         >
           <SectionLabel label="FAQ" />
-          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl mb-4">
-            Frequently Asked <span className="gradient-text">Questions</span>
+          <h2 className="font-syne font-extrabold text-3xl md:text-4xl mb-4">
+            Your Questions, <span className="gradient-text">Answered</span>
           </h2>
         </motion.div>
 
@@ -32,10 +32,10 @@ const FAQ = () => {
               value={`faq-${i}`}
               className="glass-card px-6 border-none"
             >
-              <AccordionTrigger className="text-left font-semibold text-sm md:text-base hover:no-underline">
+              <AccordionTrigger className="text-left font-semibold text-sm md:text-base hover:no-underline font-syne">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-sm text-muted-foreground leading-relaxed font-outfit">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
