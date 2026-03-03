@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion';
 import Hero from '@/components/sections/Hero';
+import Problem from '@/components/sections/Problem';
+import WhatWeBuild from '@/components/sections/WhatWeBuild';
+import Process from '@/components/sections/Process';
+import CodePerformance from '@/components/sections/CodePerformance';
 import ServicesPreview from '@/components/sections/ServicesPreview';
 import Stats from '@/components/sections/Stats';
-import AboutPreview from '@/components/sections/AboutPreview';
-import Features from '@/components/sections/Features';
 import WhyChoose from '@/components/sections/WhyChoose';
 import FAQ from '@/components/sections/FAQ';
 import CTA from '@/components/sections/CTA';
@@ -17,10 +19,12 @@ const Home = () => {
       transition={{ duration: 0.3 }}
     >
       <Hero />
+      <Problem />
+      <WhatWeBuild />
+      <Process />
+      <CodePerformance />
       <ServicesPreview />
       <Stats />
-      <AboutPreview />
-      <Features />
       <WhyChoose />
       <FAQ />
       <CTA />

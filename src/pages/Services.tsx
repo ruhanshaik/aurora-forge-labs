@@ -27,11 +27,11 @@ const Services = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <SectionLabel label="Services" />
-          <h1 className="font-comfortaa font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6">
+          <h1 className="font-syne font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6" style={{ letterSpacing: '-2px' }}>
             Comprehensive Digital{' '}
             <span className="gradient-text">Solutions</span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-outfit font-light">
             From design to deployment to security — we cover every aspect of your digital journey.
           </p>
         </div>
@@ -54,9 +54,7 @@ const Services = () => {
             {services.map((service, i) => (
               <motion.div
                 key={service.id}
-                className={`grid md:grid-cols-2 gap-12 items-center ${
-                  i % 2 === 1 ? 'md:direction-rtl' : ''
-                }`}
+                className="grid md:grid-cols-2 gap-12 items-center"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
@@ -64,11 +62,11 @@ const Services = () => {
               >
                 <div className={i % 2 === 1 ? 'md:order-2' : ''}>
                   <div className="mb-4">{iconMap[service.icon]}</div>
-                  <h2 className="font-comfortaa font-bold text-2xl md:text-3xl mb-4">{service.title}</h2>
-                  <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
+                  <h2 className="font-syne font-bold text-2xl md:text-3xl mb-4">{service.title}</h2>
+                  <p className="text-muted-foreground leading-relaxed mb-6 font-outfit">{service.description}</p>
                   <ul className="space-y-3 mb-8">
                     {service.features.map((f, j) => (
-                      <li key={j} className="flex items-center gap-3 text-sm">
+                      <li key={j} className="flex items-center gap-3 text-sm font-outfit">
                         <CheckCircle2 size={16} className="text-primary shrink-0" />
                         <span>{f}</span>
                       </li>
@@ -76,14 +74,14 @@ const Services = () => {
                   </ul>
                   <Link
                     to="/contact"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold text-sm hover:scale-105 transition-all"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold text-sm hover:scale-105 transition-all font-outfit"
                   >
                     Get Started
                   </Link>
                 </div>
                 <div className={i % 2 === 1 ? 'md:order-1' : ''}>
                   <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 border border-border flex items-center justify-center">
-                    <div className="opacity-30">{iconMap[service.icon]}</div>
+                    <div className="opacity-20">{iconMap[service.icon]}</div>
                   </div>
                 </div>
               </motion.div>
@@ -96,15 +94,15 @@ const Services = () => {
       <section className="py-20 section-dark text-center relative overflow-hidden">
         <div className="glow-orb w-64 h-64 bg-primary top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <h2 className="font-comfortaa font-bold text-3xl md:text-4xl text-foreground mb-6">
+          <h2 className="font-syne font-extrabold text-3xl md:text-4xl text-foreground mb-6">
             Ready to Get <span className="gradient-text">Started?</span>
           </h2>
-          <p className="text-gray-400 max-w-lg mx-auto mb-8">
+          <p className="text-muted-foreground max-w-lg mx-auto mb-8 font-outfit font-light">
             Let's discuss how we can bring your vision to life.
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:scale-105 transition-all"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:scale-105 transition-all font-outfit"
           >
             Contact Us
           </Link>

@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        comfortaa: ['Comfortaa', 'cursive'],
+        syne: ['Syne', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif'],
         fira: ['Fira Code', 'monospace'],
       },
       colors: {
@@ -54,6 +55,7 @@ export default {
         "deep-blue": "hsl(var(--deep-blue))",
         "electric-blue": "hsl(var(--electric-blue))",
         "cyan-accent": "hsl(var(--cyan-accent))",
+        "violet-brand": "hsl(var(--violet-brand))",
         "gmi-surface": "hsl(var(--gmi-surface))",
         "gmi-dark": "hsl(var(--gmi-dark))",
         sidebar: {
