@@ -13,9 +13,9 @@ const Hero = () => {
         className="absolute inset-0 z-0"
         style={{
           background: `
-            radial-gradient(ellipse 80% 50% at 20% 40%, hsla(258, 60%, 67%, 0.1) 0%, transparent 60%),
-            radial-gradient(ellipse 60% 40% at 80% 60%, hsla(199, 89%, 48%, 0.07) 0%, transparent 60%),
-            radial-gradient(ellipse 100% 80% at 50% 100%, hsla(217, 91%, 60%, 0.05) 0%, transparent 60%),
+            radial-gradient(ellipse 80% 50% at 20% 40%, hsla(258, 60%, 67%, 0.1) 0%, transparent 70%),
+            radial-gradient(ellipse 60% 40% at 80% 60%, hsla(199, 89%, 48%, 0.07) 0%, transparent 70%),
+            radial-gradient(ellipse 100% 80% at 50% 100%, hsla(217, 91%, 60%, 0.05) 0%, transparent 70%),
             hsl(0 0% 2%)
           `
         }} />
@@ -38,13 +38,13 @@ const Hero = () => {
 
           <h1 className="font-syne font-extrabold leading-[0.95] mb-8 max-w-5xl mx-auto"
           style={{ fontSize: 'clamp(40px, 7vw, 80px)', letterSpacing: '-2px' }}>
-            We Don't Just Build Software.{' '}
+            We Just Don't Build Software.{' '}
             <br />
-            <span className="gradient-text"></span>
+            <span className="gradient-text">We Build Solutions</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed font-outfit font-light">
-            Precision-coded. Performance-optimized. Designed to scale.
+            Simple. Fast. Reliable.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -65,45 +65,8 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Floating Cards */}
-        <div className="hidden lg:block">
-          <motion.div
-            className="absolute left-[8%] top-[40%] glass-card p-4 text-left max-w-[220px] float-animation"
-            initial={{ opacity: 0, x: -40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-            style={{ transform: 'rotate(-6deg)' }}>
-            
-            <div className="text-xs font-medium text-green-500 mb-1 font-fira">✅ Project Delivered</div>
-            <div className="text-xs text-muted-foreground">School Management CRM</div>
-            <div className="text-xs text-muted-foreground mt-1">Score: <span className="text-primary font-semibold">98/100</span></div>
-          </motion.div>
-
-          <motion.div
-            className="absolute right-[8%] top-[35%] glass-card p-4 text-left max-w-[220px] float-animation-delayed"
-            initial={{ opacity: 0, x: 40 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1, duration: 0.6 }}
-            style={{ transform: 'rotate(6deg)' }}>
-            
-            <div className="text-xs font-medium text-primary mb-1 font-fira">🔒 Security Audit</div>
-            <div className="text-xs text-muted-foreground">Store Management App</div>
-            <div className="text-xs text-muted-foreground mt-1">Status: <span className="text-green-500 font-semibold">All Clear ✓</span></div>
-          </motion.div>
-        </div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}>
-          
-          <span className="text-xs font-fira">Scroll to explore</span>
-          <ChevronDown size={18} className="animate-bounce" />
-        </motion.div>
-      </div>
-    </section>);
+     
+        
 
 };
 
