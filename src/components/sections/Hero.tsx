@@ -20,7 +20,6 @@ const Hero = () => {
           `
         }} />
       
-
       <Suspense fallback={<div className="absolute inset-0" />}>
         <HeroCanvas />
       </Suspense>
@@ -36,13 +35,10 @@ const Hero = () => {
             <span className="text-xs font-medium text-muted-foreground font-fira">Design · Dev · Security — Bangalore & Ballari</span>
           </div>
 
-          <h1 className="font-syne font-extrabold leading-[0.95] mb-8 max-w-5xl mx-auto"
-          style={{ fontSize: 'clamp(40px, 7vw, 80px)', letterSpacing: '-2px' }}>
-            We Just Don't Build Software.{' '}
-            <br />
-            <span className="gradient-text">We Build Solutions</span>
-          </h1>
-
+       <h1 className="font-syne font-extrabold leading-[0.95] mb-8 max-w-5xl mx-auto"
+  style={{ fontSize: 'clamp(40px, 7vw, 80px)', letterSpacing: '-2px' }}>
+  Excellence in Execution
+</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed font-outfit font-light">
             Simple. Fast. Reliable.
           </p>
@@ -55,7 +51,7 @@ const Hero = () => {
               Start Your Project <ArrowRight size={18} />
             </Link>
             <a
-              href="https://wa.me/919036717885"
+              href="https://wa.me/919019540558"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border text-foreground font-semibold hover:bg-secondary transition-all font-outfit">
@@ -64,10 +60,14 @@ const Hero = () => {
             </a>
           </div>
         </motion.div>
+      </div>
 
-     
-        
-
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <ChevronDown className="text-muted-foreground" size={24} />
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
