@@ -30,26 +30,20 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
           
-          {/* Brand line - Your founder info */}
-          <p className="text-sm text-purple-400 mb-2">
-            Founded by S Mohammed Ruhan • Software Engineer from Ballari • Serving Bangalore & India
-          </p>
+         
 
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background/60 backdrop-blur-sm mb-8">
-            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-xs font-medium text-muted-foreground font-fira">Design · Dev · Security — Bangalore & Ballari</span>
-          </div>
 
           <h1 className="font-syne font-extrabold leading-[0.95] mb-8 max-w-5xl mx-auto"
           style={{ fontSize: 'clamp(40px, 7vw, 80px)', letterSpacing: '-2px' }}>
-           .{' '}
+           {' '}
             <br />
-            <span className="gradient-text">Code With Confidence.</span>
+            <span className="gradient-text">Built With Purpose</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed font-outfit font-light">
-            Simple. Fast. Reliable.
-          </p>
+           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background/60 backdrop-blur-sm mb-8">
+            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            <span className="text-xs font-medium text-muted-foreground font-fira">Design · Dev · Security </span>
+          </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
