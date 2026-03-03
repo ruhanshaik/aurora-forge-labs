@@ -1,13 +1,14 @@
 import { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronDown } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const HeroCanvas = lazy(() => import('../canvas/HeroCanvas'));
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      
       {/* Aurora gradient background */}
       <div
         className="absolute inset-0 z-0"
@@ -18,8 +19,8 @@ const Hero = () => {
             radial-gradient(ellipse 100% 80% at 50% 100%, hsla(217, 91%, 60%, 0.05) 0%, transparent 70%),
             hsl(0 0% 2%)
           `
-        }} />
-      
+        }}
+      />
 
       <Suspense fallback={<div className="absolute inset-0" />}>
         <HeroCanvas />
@@ -29,16 +30,20 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
-          
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background/60 backdrop-blur-sm mb-8">
             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-xs font-medium text-muted-foreground font-fira">Design · Dev · Security — Bangalore & Ballari</span>
+            <span className="text-xs font-medium text-muted-foreground font-fira">
+              Design · Dev · Security — Bangalore & Ballari
+            </span>
           </div>
 
-          <h1 className="font-syne font-extrabold leading-[0.95] mb-8 max-w-5xl mx-auto"
-          style={{ fontSize: 'clamp(40px, 7vw, 80px)', letterSpacing: '-2px' }}>
-            We Just Don't Build Software.{' '}
+          <h1
+            className="font-syne font-extrabold leading-[0.95] mb-8 max-w-5xl mx-auto"
+            style={{ fontSize: 'clamp(40px, 7vw, 80px)', letterSpacing: '-2px' }}
+          >
+            We Just Don't Build Software.
             <br />
             <span className="gradient-text">We Build Solutions</span>
           </h1>
@@ -50,24 +55,24 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 font-outfit">
-              
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 font-outfit"
+            >
               Start Your Project <ArrowRight size={18} />
             </Link>
+
             <a
               href="https://wa.me/919036717885"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border text-foreground font-semibold hover:bg-secondary transition-all font-outfit">
-              
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border text-foreground font-semibold hover:bg-secondary transition-all font-outfit"
+            >
               Let's Talk
             </a>
           </div>
         </motion.div>
-
-     
-        
-
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
