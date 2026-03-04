@@ -1,28 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Homepage -->
   <url>
     <loc>https://gmitech.in/</loc>
+    <lastmod>2026-03-04</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
+  
+  <!-- Company Pages -->
   <url>
     <loc>https://gmitech.in/about</loc>
+    <lastmod>2026-03-04</lastmod>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
   </url>
+  
   <url>
-    <loc>https://gmitech.in/services</loc>
+    <loc>https://gmitech.in/careers</loc>
+    <lastmod>2026-03-04</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+  
+  <!-- Services -->
+  <url>
+    <loc>https://gmitech.in/services</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <!-- Portfolio/Projects -->
   <url>
     <loc>https://gmitech.in/portfolio</loc>
+    <lastmod>2026-03-04</lastmod>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
+  
+  <!-- Contact -->
   <url>
     <loc>https://gmitech.in/contact</loc>
+    <lastmod>2026-03-04</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
+  </url>
+  
+  <!-- Support Pages -->
+  <url>
+    <loc>https://gmitech.in/support</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://gmitech.in/help-center</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://gmitech.in/project-support</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://gmitech.in/terms</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://gmitech.in/privacy</loc>
+    <lastmod>2026-03-04</lastmod>
+    <priority>0.4</priority>
+    <changefreq>yearly</changefreq>
   </url>
 </urlset>
