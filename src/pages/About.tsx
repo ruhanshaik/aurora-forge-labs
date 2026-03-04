@@ -30,16 +30,16 @@ const About = () => {
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <SectionLabel label="About GMI Tech" />
           <h1 className="font-syne font-extrabold text-4xl md:text-5xl lg:text-6xl mb-6" style={{ letterSpacing: '-2px' }}>
-            Building Innovative{' '}
-            <span className="gradient-text">Digital Solutions</span>
+            Engineering Digital{' '}
+            <span className="gradient-text">Excellence</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-outfit font-light">
-            Empowering startups and small businesses with modern, secure, and scalable digital infrastructure.
+            Your trusted technology partner for scalable, secure, and high-performance digital solutions.
           </p>
         </div>
       </section>
 
-      {/* Founder */}
+      {/* Company Story */}
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -49,12 +49,12 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.65 }}
             >
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border flex items-center justify-center">
-                <div className="text-center">
-                  <span className="font-syne font-extrabold text-8xl gradient-text">SMR</span>
-                  <p className="text-muted-foreground mt-4 font-medium font-outfit">S Mohammed Ruhan</p>
-                  <p className="text-sm text-muted-foreground font-outfit">Founder & CEO</p>
-                </div>
+              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border flex items-center justify-center overflow-hidden">
+                <img
+                  src="/favicon.ico"
+                  alt="GMI Tech brand identity"
+                  className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                />
               </div>
             </motion.div>
             <motion.div
@@ -63,21 +63,30 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.65 }}
             >
-              <SectionLabel label="The Founder" />
-              <h2 className="font-syne font-bold text-3xl md:text-4xl mb-6">S Mohammed Ruhan</h2>
+              <SectionLabel label="Who We Are" />
+              <h2 className="font-syne font-bold text-3xl md:text-4xl mb-6">
+                Precision-Built <span className="gradient-text">Digital Solutions</span>
+              </h2>
               <p className="text-muted-foreground leading-relaxed mb-4 font-outfit">
-                A passionate technologist and entrepreneur based in Bangalore and Ballari,
-                S Mohammed Ruhan founded GMI Tech with a clear vision — to bridge the digital
-                gap for startups and small businesses that deserve world-class technology solutions.
+                GMI Tech is a full-service technology company dedicated to empowering startups and small-to-medium
+                enterprises with world-class digital infrastructure. We specialize in building modern, secure, and
+                scalable software systems that drive measurable business growth.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4 font-outfit">
-                With a deep understanding of design, development, and security, Ruhan leads
-                GMI Tech in delivering comprehensive digital solutions that not only look
-                exceptional but perform at the highest standards.
+                From custom web and mobile applications to AI-powered automation and enterprise-grade security,
+                we deliver comprehensive solutions designed for performance at scale. Our approach combines clean
+                architecture, intuitive design, and rigorous testing to ensure every product we ship meets the
+                highest standards.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4 font-outfit">
+                We serve as a complete digital transformation partner — handling everything from initial strategy
+                and design to development, deployment, and ongoing optimization. Our clients trust us to build
+                systems that not only look exceptional but perform reliably under real-world conditions.
               </p>
               <p className="text-muted-foreground leading-relaxed font-outfit">
-                His commitment to quality and innovation drives every project, ensuring that
-                each client receives personalized attention and results that exceed expectations.
+                GMI Tech was founded by <strong className="text-foreground">S Mohammed Ruhan</strong> with a vision to bridge the digital gap
+                for emerging businesses. Based in Bangalore and Ballari, his commitment to quality and innovation
+                drives every project we undertake.
               </p>
             </motion.div>
           </div>
@@ -85,8 +94,9 @@ const About = () => {
       </section>
 
       {/* Mission / Vision / Values */}
-      <section className="py-20 md:py-28 bg-gmi-surface">
-        <div className="container mx-auto px-4 md:px-6">
+      <section className="py-20 md:py-28 section-dark relative overflow-hidden">
+        <div className="glow-orb w-64 h-64 bg-primary top-0 left-1/4" />
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <motion.div
             className="grid md:grid-cols-3 gap-6"
             variants={stagger}
