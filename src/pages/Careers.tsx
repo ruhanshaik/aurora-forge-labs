@@ -31,6 +31,10 @@ const whyJoin = [
 const Careers = () => {
   const [activeTab, setActiveTab] = useState<'internships' | 'fulltime'>('internships');
 
+  const handleInternshipClick = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSdgyptneXcp0ynPhcm58BKUZrrXPMgrcCVXNY-d1rRWB0S02g/viewform', '_blank');
+  };
+
   return (
     <motion.div {...pageAnim}>
       {/* Hero */}
@@ -142,7 +146,10 @@ const Careers = () => {
           {/* Tab Buttons */}
           <div className="flex justify-center gap-4 mb-12">
             <button
-              onClick={() => setActiveTab('internships')}
+              onClick={() => {
+                setActiveTab('internships');
+                handleInternshipClick();
+              }}
               className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-outfit font-semibold transition-all ${
                 activeTab === 'internships'
                   ? 'bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-lg'
@@ -175,22 +182,16 @@ const Careers = () => {
               <GlassCard className="p-6 md:p-8">
                 <h3 className="font-syne font-bold text-xl mb-2 text-center">Internship Application</h3>
                 <p className="text-sm text-muted-foreground font-outfit text-center mb-6">
-                  Fill out the form below to apply for an internship at GMI Tech.
+                  Click the button below to open the internship application form in a new window.
                 </p>
-                <div className="w-full rounded-xl overflow-hidden">
-                  <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdgyptneXcp0ynPhcm58BKUZrrXPMgrcCVXNY-d1rRWB0S02g/viewform?embedded=true"
-                    width="100%"
-                    height="3517"
-                    frameBorder={0}
-                    marginHeight={0}
-                    marginWidth={0}
-                    title="GMI Tech Internship Application Form"
-                    className="w-full min-h-[600px]"
-                    style={{ border: 'none' }}
+                <div className="flex justify-center">
+                  <button
+                    onClick={handleInternshipClick}
+                    className="flex items-center gap-2 px-8 py-4 rounded-full text-base font-outfit font-semibold transition-all bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-lg hover:shadow-xl"
                   >
-                    Loading…
-                  </iframe>
+                    <GraduationCap size={20} />
+                    Apply for Internship
+                  </button>
                 </div>
               </GlassCard>
             </motion.div>
