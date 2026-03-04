@@ -4,6 +4,12 @@ import { Palette, Code2, Layout, Shield, Brain, CheckCircle2 } from 'lucide-reac
 import SectionLabel from '@/components/shared/SectionLabel';
 import { services } from '@/data/services';
 
+import serviceWebDev from '@/assets/service-web-dev.jpg';
+import serviceMobileApp from '@/assets/service-mobile-app.jpg';
+import serviceUiux from '@/assets/service-uiux.jpg';
+import serviceSecurity from '@/assets/service-security.jpg';
+import serviceAi from '@/assets/service-ai.jpg';
+
 const pageAnim = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
@@ -17,6 +23,14 @@ const iconMap: Record<string, React.ReactNode> = {
   Layout: <Layout size={36} className="text-primary" />,
   Shield: <Shield size={36} className="text-accent" />,
   Brain: <Brain size={36} className="text-primary" />,
+};
+
+const imageMap: Record<string, string> = {
+  Palette: serviceWebDev,
+  Code2: serviceMobileApp,
+  Layout: serviceUiux,
+  Shield: serviceSecurity,
+  Brain: serviceAi,
 };
 
 const Services = () => {
@@ -80,8 +94,13 @@ const Services = () => {
                   </Link>
                 </div>
                 <div className={i % 2 === 1 ? 'md:order-1' : ''}>
-                  <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 border border-border flex items-center justify-center">
-                    <div className="opacity-20">{iconMap[service.icon]}</div>
+                  <div className="aspect-[4/3] rounded-2xl border border-border overflow-hidden group">
+                    <img
+                      src={imageMap[service.icon]}
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
               </motion.div>

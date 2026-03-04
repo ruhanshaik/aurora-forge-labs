@@ -1,26 +1,34 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Building2, BarChart3, Cloud, Smartphone, Globe, TrendingUp, Share2, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import SectionLabel from '@/components/shared/SectionLabel';
 import GlassCard from '@/components/shared/GlassCard';
 import { portfolioItems, portfolioCategories } from '@/data/portfolio';
+
+import portfolioEnterprise from '@/assets/portfolio-enterprise.jpg';
+import portfolioCrm from '@/assets/portfolio-crm.jpg';
+import portfolioSaas from '@/assets/portfolio-saas.jpg';
+import portfolioMobile from '@/assets/portfolio-mobile.jpg';
+import portfolioWebapp from '@/assets/portfolio-webapp.jpg';
+import portfolioMarketing from '@/assets/portfolio-marketing.jpg';
+import portfolioSocial from '@/assets/portfolio-social.jpg';
+
+const imageMap: Record<string, string> = {
+  'portfolio-enterprise': portfolioEnterprise,
+  'portfolio-crm': portfolioCrm,
+  'portfolio-saas': portfolioSaas,
+  'portfolio-mobile': portfolioMobile,
+  'portfolio-webapp': portfolioWebapp,
+  'portfolio-marketing': portfolioMarketing,
+  'portfolio-social': portfolioSocial,
+};
 
 const pageAnim = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -10 },
   transition: { duration: 0.4 },
-};
-
-const iconMap: Record<string, React.ReactNode> = {
-  Building2: <Building2 size={36} className="text-primary" />,
-  BarChart3: <BarChart3 size={36} className="text-accent" />,
-  Cloud: <Cloud size={36} className="text-primary" />,
-  Smartphone: <Smartphone size={36} className="text-accent" />,
-  Globe: <Globe size={36} className="text-primary" />,
-  TrendingUp: <TrendingUp size={36} className="text-accent" />,
-  Share2: <Share2 size={36} className="text-primary" />,
 };
 
 const Portfolio = () => {
@@ -67,55 +75,63 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Portfolio Items */}
+      {/* Portfolio Grid */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeFilter}
-              className="space-y-20"
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.35 }}
             >
-              {filtered.map((item, i) => (
+              {filtered.map((item) => (
                 <motion.div
                   key={item.id}
-                  className={`grid md:grid-cols-2 gap-12 items-center`}
-                  initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.15 }}
-                  transition={{ duration: 0.65 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
                 >
-                  <div className={i % 2 === 1 ? 'md:order-2' : ''}>
-                    <span className="inline-block font-fira text-xs uppercase tracking-widest text-primary mb-3">{item.category}</span>
-                    <div className="mb-4">{iconMap[item.icon]}</div>
-                    <h2 className="font-syne font-bold text-2xl md:text-3xl mb-4">{item.title}</h2>
-                    <p className="text-muted-foreground font-outfit leading-relaxed mb-6">{item.description}</p>
-                    <ul className="space-y-3 mb-6">
-                      {item.features.map((f, j) => (
-                        <li key={j} className="flex items-center gap-3 text-sm font-outfit">
-                          <CheckCircle2 size={16} className="text-primary shrink-0" />
-                          <span>{f}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <p className="text-sm font-syne font-bold gradient-text mb-6">{item.tagline}</p>
-                    <Link
-                      to="/contact"
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold text-sm hover:scale-105 transition-all font-outfit"
-                    >
-                      Get Started
-                    </Link>
-                  </div>
-                  <div className={i % 2 === 1 ? 'md:order-1' : ''}>
-                    <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 border border-border flex items-center justify-center overflow-hidden group">
-                      <div className="opacity-20 group-hover:opacity-30 transition-opacity group-hover:scale-110 transition-transform duration-500">
-                        {iconMap[item.icon]}
+                  <GlassCard className="h-full flex flex-col overflow-hidden !p-0">
+                    {/* Image */}
+                    <div className="aspect-[16/10] overflow-hidden">
+                      <img
+                        src={imageMap[item.image]}
+                        alt={item.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                    </div>
+                    {/* Content */}
+                    <div className="p-6 flex flex-col flex-1">
+                      <span className="inline-block font-fira text-xs uppercase tracking-widest text-primary mb-2">{item.category}</span>
+                      <h3 className="font-syne font-bold text-lg mb-2">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground font-outfit mb-4 line-clamp-2">{item.description}</p>
+                      
+                      {/* Tech Stack */}
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {item.techStack.map((tech, j) => (
+                          <span key={j} className="px-2 py-1 rounded-md text-xs font-fira bg-primary/10 text-primary border border-primary/20">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+
+                      <p className="text-xs font-syne font-bold gradient-text mb-4">{item.tagline}</p>
+                      
+                      <div className="mt-auto">
+                        <Link
+                          to="/contact"
+                          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold text-xs hover:scale-105 transition-all font-outfit"
+                        >
+                          View Project
+                        </Link>
                       </div>
                     </div>
-                  </div>
+                  </GlassCard>
                 </motion.div>
               ))}
             </motion.div>
