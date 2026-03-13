@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+
 import { ArrowRight, ChevronDown } from 'lucide-react';
 
 const HeroCanvas = lazy(() => import('../canvas/HeroCanvas'));
