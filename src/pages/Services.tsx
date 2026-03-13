@@ -86,12 +86,14 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    to="/contact"
+                  <a
+                    href="https://wa.me/message/DF2K3DWRYML6G1"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold text-sm hover:scale-105 transition-all font-outfit"
                   >
                     Get Started
-                  </Link>
+                  </a>
                 </div>
                 <div className={i % 2 === 1 ? 'md:order-1' : ''}>
                   <div className="aspect-[4/3] rounded-2xl border border-border overflow-hidden group">
