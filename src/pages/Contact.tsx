@@ -82,13 +82,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground font-outfit">Address</p>
-                  <p className="text-sm font-medium font-outfit">PES College Road, Srinagar, Bangalore</p>
-                  <p className="text-sm font-medium font-outfit">Cowl Bazar, Ballari 583102</p>
+                  <p className="text-sm font-medium font-outfit">Ballari & Bangalore, Karnataka, India</p>
                 </div>
               </div>
 
               <a
-                href="https://wa.me/919036717885"
+                href="https://wa.me/message/DF2K3DWRYML6G1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 glass-card hover:shadow-md"

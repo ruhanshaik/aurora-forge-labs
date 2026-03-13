@@ -86,12 +86,14 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    to="/contact"
+                  <a
+                    href="https://wa.me/message/DF2K3DWRYML6G1"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold text-sm hover:scale-105 transition-all font-outfit"
                   >
                     Get Started
-                  </Link>
+                  </a>
                 </div>
                 <div className={i % 2 === 1 ? 'md:order-1' : ''}>
                   <div className="aspect-[4/3] rounded-2xl border border-border overflow-hidden group">
@@ -119,12 +121,14 @@ const Services = () => {
           <p className="text-muted-foreground max-w-lg mx-auto mb-8 font-outfit font-light">
             Let's discuss how we can bring your vision to life.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/message/DF2K3DWRYML6G1"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:scale-105 transition-all font-outfit"
           >
             Contact Us
-          </Link>
+          </a>
         </div>
       </section>
     </motion.div>

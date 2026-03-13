@@ -123,12 +123,14 @@ const Portfolio = () => {
                       <p className="text-xs font-syne font-bold gradient-text mb-4">{item.tagline}</p>
                       
                       <div className="mt-auto">
-                        <Link
-                          to="/contact"
+                        <a
+                          href="https://wa.me/message/DF2K3DWRYML6G1"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold text-xs hover:scale-105 transition-all font-outfit"
                         >
                           View Project
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </GlassCard>
@@ -150,12 +152,14 @@ const Portfolio = () => {
             We build digital ecosystems that{' '}
             <span className="gradient-text">power businesses forward.</span>
           </h2>
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/message/DF2K3DWRYML6G1"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:scale-105 transition-all font-outfit"
           >
             Start Your Project
-          </Link>
+          </a>
         </div>
       </section>
     </motion.div>

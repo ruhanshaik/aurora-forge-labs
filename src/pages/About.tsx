@@ -195,12 +195,14 @@ const About = () => {
           <h2 className="font-syne font-extrabold text-3xl md:text-4xl mb-6">
             Ready to Work <span className="gradient-text">Together?</span>
           </h2>
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/message/DF2K3DWRYML6G1"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 font-outfit"
           >
             Get Started
-          </Link>
+          </a>
         </div>
       </section>
     </motion.div>
