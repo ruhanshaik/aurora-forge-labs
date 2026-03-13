@@ -67,12 +67,14 @@ const Navbar = () => {
               )}
             </Link>
           ))}
-          <Link
-            to="/contact"
+          <a
+            href="https://wa.me/message/DF2K3DWRYML6G1"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground text-sm font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105 font-outfit"
           >
             Let's Talk <ArrowRight size={14} />
-          </Link>
+          </a>
         </div>
 
         {/* Mobile toggle */}
