@@ -82,8 +82,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground font-outfit">Address</p>
-                  <p className="text-sm font-medium font-outfit">PES College Road, Srinagar, Bangalore</p>
-                  <p className="text-sm font-medium font-outfit">Cowl Bazar, Ballari 583102</p>
+                  <p className="text-sm font-medium font-outfit">Ballari & Bangalore, Karnataka, India</p>
                 </div>
               </div>
 
