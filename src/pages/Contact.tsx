@@ -87,7 +87,7 @@ const Contact = () => {
               </div>
 
               <a
-                href="https://wa.me/919036717885"
+                href="https://wa.me/message/DF2K3DWRYML6G1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 glass-card hover:shadow-md"

@@ -113,12 +113,14 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
-              <Link
-                to="/contact"
+              <a
+                href="https://wa.me/message/DF2K3DWRYML6G1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold mt-2 font-outfit"
               >
                 Let's Talk <ArrowRight size={14} />
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}

@@ -23,14 +23,16 @@ const CTA = () => {
             Software Engineered With Precision. Designed To Perform. Built To Scale.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              to="/contact"
+            <a
+              href="https://wa.me/message/DF2K3DWRYML6G1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold shadow-lg shadow-primary/20 hover:shadow-xl transition-all hover:scale-105 font-outfit"
             >
               Start Your Project <ArrowRight size={18} />
-            </Link>
+            </a>
             <a
-              href="https://wa.me/919036717885"
+              href="https://wa.me/message/DF2K3DWRYML6G1"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-border text-foreground font-semibold hover:border-primary/40 hover:bg-primary/5 transition-all font-outfit"
