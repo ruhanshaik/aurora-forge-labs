@@ -120,12 +120,14 @@ const Blogs = () => {
               <div className="mt-12 p-6 rounded-2xl glass-card text-center">
                 <p className="font-comfortaa font-bold text-lg mb-2">Ready to Start Your Project?</p>
                 <p className="text-muted-foreground font-comfortaa text-sm mb-4">Contact GMI Tech today for a free consultation.</p>
-                <Link
-                  to="/contact"
+                <a
+                  href="https://wa.me/message/DF2K3DWRYML6G1"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-comfortaa font-semibold text-sm hover:scale-105 transition-transform"
                 >
                   Get in Touch <ArrowRight size={14} />
-                </Link>
+                </a>
               </div>
             </div>
           </motion.section>
